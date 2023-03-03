@@ -1,0 +1,43 @@
+.project-container .text-wrapper{
+    cursor: pointer;
+}
+
+.project-container h3{
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.project-expand{
+    position: absolute;
+    animation: sectionExpand 1s forwards;
+}
+
+.project-expand h3{
+    animation: fontIncrease 1s forwards;
+}
+
+.project-container .text-wrapper:disabled{
+    color: black;
+}
+
+@keyframes sectionExpand {
+    from{
+        width: 7rem;
+    }
+    to{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@keyframes fontIncrease {
+    from{
+        font-size: 1rem;
+    }
+    to{
+        font-size: 1.5rem;
+    }
+}
