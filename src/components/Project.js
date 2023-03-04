@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
+import {TiChevronLeft} from 'react-icons/ti'
 import './styles/Project.css'
 
-const Project = ({name, backgroundColor, left}) => {
+const Project = ({name, desc, backgroundColor, left}) => {
 
   const [expandProject, setExpandProject] = useState(false);
 
@@ -14,6 +15,10 @@ const Project = ({name, backgroundColor, left}) => {
       <button className='text-wrapper' style={{backgroundColor: backgroundColor, cursor: expandProject ? 'auto' : 'pointer'}} disabled={expandProject} onClick={() => expandProjectHandler()}>
         <h3>{name}</h3>
       </button>
+      <div className={expandProject ? 'project-content visible' : 'project-content hide'}>
+        <p>{desc}</p>
+        <button className='close-project-btn' onClick={() => expandProjectHandler()}><TiChevronLeft size={'4rem'}/></button>
+      </div>
     </div>
   )
 }
