@@ -20,4 +20,17 @@
     width: fit-content;
 }
 
+@media screen and (max-width: 675px) {
+    .projects-container{
+        flex-direction: column;
+    }
+
+    .projects-container h2{
+        writing-mode: horizontal-tb;
+    }
+
+    .projects-container .text-wrapper{
+        min-height: auto;
+    }
+}
 
