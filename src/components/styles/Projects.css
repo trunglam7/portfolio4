@@ -30,7 +30,7 @@
     }
 
     .projects-container .text-wrapper{
-        min-height: auto;
+        min-height: 7rem;
     }
 }
 
