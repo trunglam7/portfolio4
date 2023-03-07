@@ -35,7 +35,7 @@
 }
 
 .project-content{
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -44,6 +44,15 @@
     border: none;
     cursor: pointer;
     color: black;
+}
+
+.proj-info{
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.proj-info ul{
+    list-style: none;
 }
 
 @keyframes sectionExpand {

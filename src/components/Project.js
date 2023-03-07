@@ -16,9 +16,19 @@ const Project = ({name, desc, backgroundColor, left, top}) => {
         <h3>{name}</h3>
       </button>
       <div className={expandProject ? 'project-content visible' : 'project-content hide'}>
-        <p>{desc}</p>
-        <button className='close-project-btn' onClick={() => expandProjectHandler()}><TiChevronLeft size={'4rem'}/></button>
+        <div className='proj-info'>
+          <p>{desc}</p>
+          <p>Tech Stack:</p>
+          <ul>
+            <li>React</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
       </div>
+      <button className={expandProject ? 'close-project-btn' : 'close-project-btn hide'}  onClick={() => expandProjectHandler()}><TiChevronLeft size={'4rem'}/></button>
     </div>
   )
 }
