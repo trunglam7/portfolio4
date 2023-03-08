@@ -9,7 +9,16 @@ const Projects = () => {
         <div className='text-wrapper'>
             <h2>Projects</h2>
         </div>
-        {ProjectData.map((x, index) => <Project key={index} name={x.projectName} desc={x.projectDesc} backgroundColor={x.backgroundColor} left={((index + 1) * 7) + 'rem'} top={((index + 1) * 7) + 'rem'}/>)}
+        {
+          ProjectData.map((x, index) => <Project key={index}
+          name={x.projectName}
+          desc={x.projectDesc}
+          backgroundColor={x.backgroundColor}
+          techStack = {x.techStack}
+          projImage = {x.projImage}
+          left={((index + 1) * 7) + 'rem'}
+          top={((index + 1) * 7) + 'rem'}/>)
+        }
     </section>
   )
 }

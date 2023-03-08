@@ -37,6 +37,7 @@
 .project-content{
     justify-content: center;
     width: 100%;
+    align-items: center;
 }
 
 .close-project-btn{
@@ -53,6 +54,11 @@
 
 .proj-info ul{
     list-style: none;
+}
+
+.project-screenshot{
+    max-height: 75vh;
+    border-radius: 10px;
 }
 
 @keyframes sectionExpand {
@@ -77,7 +83,7 @@
         left: 0;
         width: 100%;
         top: 0;
-        height: calc(100vh - 59px);
+        min-height: calc(100vh - 59px);
     }
 }
 
@@ -85,6 +91,7 @@
 
     .close-project-btn{
         transform: rotate(90deg);
+        padding: 10px;
     }
 
     .project-container h3{
@@ -93,12 +100,15 @@
 
     .project-expand{
         animation: sectionExpandMobile 1s forwards;
-        height: calc(100vh - 89px);
+        min-height: calc(100vh - 89px);
+        display: flex;
     }
 
     .project-container{
         top: 30px;
         flex-direction: column;
+        overflow: auto;
+        overflow-x: hidden;
     }
 
     .project-container .text-wrapper{

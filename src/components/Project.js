@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {TiChevronLeft} from 'react-icons/ti'
 import './styles/Project.css'
 
-const Project = ({name, desc, backgroundColor, left, top}) => {
+const Project = ({name, desc, backgroundColor, techStack, projImage, left, top}) => {
 
   const [expandProject, setExpandProject] = useState(false);
 
@@ -16,15 +16,12 @@ const Project = ({name, desc, backgroundColor, left, top}) => {
         <h3>{name}</h3>
       </button>
       <div className={expandProject ? 'project-content visible' : 'project-content hide'}>
+        <img className='project-screenshot' src={projImage} alt='project screenshot'/>
         <div className='proj-info'>
-          <p>{desc}</p>
-          <p>Tech Stack:</p>
+          <p style={{margin: '3rem 0'}}>{desc}</p>
+          <b>Tech Stack:</b>
           <ul>
-            <li>React</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Firebase</li>
+            {techStack.map((x, index) => <li key={index}>{x}</li>)}
           </ul>
         </div>
       </div>
