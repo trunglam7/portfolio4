@@ -16,6 +16,8 @@ const Projects = () => {
           backgroundColor={x.backgroundColor}
           techStack = {x.techStack}
           projImage = {x.projImage}
+          liveLink = {x.liveLink}
+          githubLink = {x.githubLink}
           left={((index + 1) * 7) + 'rem'}
           top={((index + 1) * 7) + 'rem'}/>)
         }

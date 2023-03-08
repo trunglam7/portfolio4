@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import {TiChevronLeft} from 'react-icons/ti'
+import {HiOutlineExternalLink} from 'react-icons/hi'
+import {BsGithub} from 'react-icons/bs'
 import './styles/Project.css'
 
-const Project = ({name, desc, backgroundColor, techStack, projImage, left, top}) => {
+const Project = ({name, desc, backgroundColor, techStack, projImage, liveLink, githubLink, left, top}) => {
 
   const [expandProject, setExpandProject] = useState(false);
 
@@ -23,6 +25,10 @@ const Project = ({name, desc, backgroundColor, techStack, projImage, left, top})
           <ul>
             {techStack.map((x, index) => <li key={index}>{x}</li>)}
           </ul>
+          <div className='links-container'>
+            <a href={liveLink} target='_blank' rel="noreferrer"><HiOutlineExternalLink size={'3rem'}/></a>
+            <a href={githubLink} target='_blank' rel="noreferrer"><BsGithub size={'3rem'}/></a>
+          </div>
         </div>
       </div>
       <button className={expandProject ? 'close-project-btn' : 'close-project-btn hide'}  onClick={() => expandProjectHandler()}><TiChevronLeft size={'4rem'}/></button>

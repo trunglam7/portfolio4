@@ -61,6 +61,17 @@
     border-radius: 10px;
 }
 
+.links-container a{
+    color: inherit;
+}
+
+.links-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
 @keyframes sectionExpand {
     from{
         top: 0;
@@ -83,7 +94,7 @@
         left: 0;
         width: 100%;
         top: 0;
-        min-height: calc(100vh - 59px);
+        min-height: calc(100vh - 91px);
     }
 }
 
