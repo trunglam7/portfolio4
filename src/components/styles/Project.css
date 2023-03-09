@@ -14,6 +14,7 @@
 .project-expand{
     position: absolute;
     animation: sectionExpand 1s forwards;
+    z-index: 1;
 }
 
 .project-container .text-wrapper:disabled{

@@ -1,0 +1,9 @@
+main{
+    position: relative;
+}
+
+@media screen and (max-width: 675px){
+    main{
+        min-height: calc(100vh - 91px);
+    }
+}

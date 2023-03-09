@@ -1,5 +1,6 @@
 import React from 'react'
 import Projects from './Projects'
+import './styles/Main.css'
 
 const Main = () => {
   return (
