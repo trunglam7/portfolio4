@@ -2,7 +2,7 @@ const ProjectData = [
     {
         projectName: 'PupTop',
         backgroundColor: '#ff7878',
-        projectDesc: "A simple web application that combines the love for dogs and the concept of Tinder. This web application allows users to vote on other dogs to see which is on top.",
+        projectDesc: "A web application that combines the love for dogs and the concept of Tinder. This web application allows users to add and vote anonymously on other dogs to see which is pup is on top.",
         techStack: ['React', 'HTML', 'CSS', 'Javascript', 'Firebase'],
         projImage: './images/puptop-image.png',
         liveLink: 'https://puptop.netlify.app',
@@ -29,7 +29,7 @@ const ProjectData = [
     {
         projectName: 'Pokemon Randomizer',
         backgroundColor: '#c38aff',
-        projectDesc: "A simple web application using a REST API from pokeapi.co that randomizes your own Pokemon team.",
+        projectDesc: "A web application using a REST API from pokeapi.co that randomizes your very own Pokemon team. It also randomizes your Pokemon movesets",
         techStack: ['React', 'HTML', 'CSS', 'Javascript'],
         projImage: './images/pokemon-randomizer.png',
         liveLink: 'https://trunglam7.github.io/pokemon-randomizer/',
