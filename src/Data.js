@@ -11,7 +11,7 @@ const ProjectData = [
     {
         projectName: 'Advice Generator',
         backgroundColor: '#6dc4ff',
-        projectDesc: "An advice generator using an advice API.",
+        projectDesc: "An advice generator using an advice API at https://api.adviceslip.com.",
         techStack: ['HTML', 'SCSS', 'Javascript'],
         projImage: './images/advice.png',
         liveLink: 'https://trunglam7-advice-generator-app.netlify.app',
