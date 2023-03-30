@@ -2,8 +2,8 @@ const ProjectData = [
     {
         projectName: 'PupTop',
         backgroundColor: '#ff7878',
-        projectDesc: "A web application that combines the love for dogs and the concept of Tinder. This web application allows users to add and vote anonymously on other dogs to see which is pup is on top.",
-        techStack: ['React', 'HTML', 'CSS', 'Javascript', 'Firebase'],
+        projectDesc: "A web application that takes the concept of Tinder, but apply it to dogs. This web application allows users to add and vote anonymously on other dogs to see which is pup is on top.",
+        techStack: ['React', 'HTML', 'CSS', 'Javascript', 'Firebase', 'React Springs'],
         projImage: './images/puptop-image.png',
         liveLink: 'https://puptop.netlify.app',
         githubLink: 'https://www.github.com/trunglam7/puptop'
