@@ -9,6 +9,15 @@ const ProjectData = [
         githubLink: 'https://www.github.com/trunglam7/puptop'
     },
     {
+        projectName: 'Pokemon Randomizer',
+        backgroundColor: '#c38aff',
+        projectDesc: "A web application using a REST API from pokeapi.co that randomizes your very own Pokemon team along with their randomized movesets.",
+        techStack: ['React', 'HTML', 'CSS', 'Typescript'],
+        projImage: './images/pokemon-randomizer2.png',
+        liveLink: 'https://pokemon-randomizer2.netlify.app',
+        githubLink: 'https://github.com/trunglam7/pokemon-randomizer-2'
+    },
+    {
         projectName: 'Advice Generator',
         backgroundColor: '#6dc4ff',
         projectDesc: "An advice generator using an advice API at https://api.adviceslip.com.",
@@ -25,15 +34,6 @@ const ProjectData = [
         projImage: './images/interactive-form.png',
         liveLink: 'https://trunglam7-interactive-card-form.netlify.app',
         githubLink: 'https://github.com/trunglam7/interactive-card-details'
-    },
-    {
-        projectName: 'Pokemon Randomizer',
-        backgroundColor: '#c38aff',
-        projectDesc: "A web application using a REST API from pokeapi.co that randomizes your very own Pokemon team. It also randomizes your Pokemon movesets",
-        techStack: ['React', 'HTML', 'CSS', 'Javascript'],
-        projImage: './images/pokemon-randomizer.png',
-        liveLink: 'https://trunglam7.github.io/pokemon-randomizer/',
-        githubLink: 'https://github.com/trunglam7/pokemon-randomizer/tree/main'
     }
 ]
 
